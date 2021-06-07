@@ -1,0 +1,6 @@
+{
+    "200" : "Sucess",
+    "401" : "Unauthorized",
+    "410" : "Token invalid/expired",
+    "500" : "Internal Server Error"
+}
