@@ -38,6 +38,7 @@ Router.post("/login", async (req, res, next) => {
       createdAt: new Date().getTime(),
       updatedBy: "login",
       updatedAt: new Date().getTime(),
+      
     });
 
     let jwtToken = await jwt.sign({ userId: user._id }, "asdf21212", {
