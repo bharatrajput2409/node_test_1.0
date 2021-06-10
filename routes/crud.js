@@ -41,7 +41,7 @@ Router.post("/login", async (req, res, next) => {
       updatedBy: "login",
       updatedAt: new Date().getTime(),
       
-    });
+    });//master
     //for bharat
     let jwtToken = await jwt.sign({ userId: user._id }, "asdf21212", {
       expiresIn: 144000,
