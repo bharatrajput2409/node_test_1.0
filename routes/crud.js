@@ -33,6 +33,7 @@ Router.post("/login", async (req, res, next) => {
     let user = await User.create({
       email: request_data.userEmail,
       name: request_data.name,
+      
       password: request_data.userPassword,
       createdBy: "login",
       createdAt: new Date().getTime(),
