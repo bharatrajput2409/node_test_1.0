@@ -7,7 +7,7 @@ const response = require("../response.json");
 const jwt = require("jsonwebtoken");
 
 Router.post("/uploadfile", async (req, res) => {
-  console.log(req.body);
+  console.log(req.headers);
   const buffer = Buffer.from(req.body.file.split(",")[1], "base64");
   const file = reader.read(buffer, { type: "buffer" });
   console.log(file);
