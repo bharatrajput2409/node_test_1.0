@@ -49,3 +49,11 @@ export default function CustomizedSnackbars(props) {
 		</div>
 	);
 }
+
+{snackOpen && (
+            <Snackbar
+              message={snackMessage}
+              setOpen={setSnackOpen}
+              severity={snackOpen === 1 ? "error" : "success"}
+            />
+          )}
